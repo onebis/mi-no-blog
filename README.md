@@ -1,8 +1,8 @@
-# Minoru's Homepage
+# Mi-no-blog
 
 ---
 
-[This is my homepage](https://my-portfolio-rosy-alpha-26.vercel.app/ "minoru's homepage")
+[This is my homepage](https://mi-no-blog.vercel.app/ "minoru's homepage")
 
 ## STACK
 
