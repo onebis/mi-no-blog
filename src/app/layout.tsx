@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import './globals.css'
+import { Noto_Sans_JP, ADLaM_Display } from 'next/font/google'
+import '@/styles/globals.css'
+import React from 'react'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const notoSansJP = Noto_Sans_JP({
+  variable: '--font-noto-sans-jp',
   subsets: ['latin'],
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+const adlamDisplay = ADLaM_Display({
+  weight: '400',
+  variable: '--font-adlam-display',
+  subsets: ['adlam'],
 })
 
 export const metadata: Metadata = {
@@ -23,8 +25,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+    <html lang='ja'>
+      <body className={`${notoSansJP.variable} ${adlamDisplay.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }
