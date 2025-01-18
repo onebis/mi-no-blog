@@ -9,7 +9,7 @@
   --font-adlam-display: 'ADLaM Display', sans-serif;
 }
 
-.adlam-display {
+.font-adlam {
   font-family: var(--font-adlam-display);
 }
 
