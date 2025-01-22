@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from 'react-icons/fa6'
 
 export const Header: FC = () => {
   return (
-    <header className='fixed left-0 top-0 z-50 h-16 w-full border-b border-b-gray-600'>
+    <header className='fixed left-0 top-0 z-50 h-16 w-full border-b border-b-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900'>
       <div className='container mx-auto flex items-center justify-between p-4'>
         <NextLink href='/' className='font-adlam text-3xl font-bold transition'>
           <span className='text-red-700'>M</span>ino Blog

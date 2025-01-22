@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='ja'>
+    <html lang='ja' className='dark'>
       <body
-        className={`${notoSansJP.variable} ${adlamDisplay.variable} mx-auto max-w-screen-lg antialiased`}
+        className={`${notoSansJP.variable} ${adlamDisplay.variable} scroll-pt-header mx-auto max-w-screen-lg antialiased`}
       >
         <Header />
         <Main>{children}</Main>
