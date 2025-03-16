@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { Noto_Sans_JP, ADLaM_Display } from 'next/font/google'
 import '@/styles/globals.css'
 import React from 'react'
-import { Header } from '@/components/Header'
-import { Main } from '@/components/Main'
+import { Footer } from '@/components/shared/Footer'
+import { Header } from '@/components/shared/Header'
+import { Main } from '@/components/shared/Main'
 
 const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
@@ -29,10 +30,11 @@ export default function RootLayout({
   return (
     <html lang='ja' className='dark'>
       <body
-        className={`${notoSansJP.variable} ${adlamDisplay.variable} scroll-pt-header mx-auto max-w-screen-lg antialiased`}
+        className={`${notoSansJP.variable} ${adlamDisplay.variable} mx-auto max-w-screen-lg scroll-pt-header antialiased`}
       >
         <Header />
         <Main>{children}</Main>
+        <Footer />
       </body>
     </html>
   )

@@ -1,16 +1,9 @@
 import * as fs from 'node:fs'
 import path from 'node:path'
 import frontMatter from 'front-matter'
+import { FrontMatter, Post } from '@/types'
 
 const contentsPath = path.join(process.cwd(), 'contents')
-type FrontMatter = {
-  title: string
-  createdAt: string
-  tags: string[]
-  description: string
-}
-
-type Post = { slug: string } & FrontMatter
 
 export const getAllPosts = (): Post[] => {
   const filenames = fs.readdirSync(contentsPath)
