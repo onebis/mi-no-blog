@@ -13,8 +13,8 @@
   font-family: var(--font-adlam-display);
 }
 .dark {
-      --background: #0a0a0a;
-      --foreground: #ededed;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/
@@ -28,4 +28,3 @@ body {
   background: var(--background);
   font-family: var(--font-noto-sans-jp), sans-serif;
 }
-

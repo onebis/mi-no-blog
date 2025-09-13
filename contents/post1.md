@@ -1,8 +1,8 @@
 ---
-title: "ここにタイトルをいれます"
-createdAt: "2025-01-28"
-tags: ["nextjs", "react"]
-description: "ここに記事の説明をいれます"
+title: 'ここにタイトルをいれます'
+createdAt: '2025-01-28'
+tags: ['nextjs', 'react']
+description: 'ここに記事の説明をいれます'
 ---
 
 # この記事のタイトルです
@@ -16,4 +16,3 @@ description: "ここに記事の説明をいれます"
 ## サブタイトル2
 
 サブタイトル2のテストを書いています
-
